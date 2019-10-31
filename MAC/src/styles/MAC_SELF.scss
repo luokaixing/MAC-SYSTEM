@@ -1,0 +1,156 @@
+// 主色
+$navHeight: 48px;
+$main: black;
+$grey: #707070;
+// 输入框边框颜色和字体颜色
+$inputBoder: #999999;
+$inputFontColor: #999999;
+// 背景色和最短宽度
+$bgColor: #eaeaea;
+$bgBorder: #151515;
+$minWidth: 1300px;
+$activeColor: rgba(51, 173, 51, 0.18);
+$active: rgba(51, 173, 51, 1);
+
+// 输入框
+.grey_input {
+  border: solid 1px $inputBoder;
+  color: $inputFontColor;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 14px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $inputFontColor;
+  }
+}
+
+// 单行省略号
+@mixin overflow1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 多行省略号
+@mixin overflow($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  white-space: normal;
+  overflow: hidden;
+}
+
+// App-mian 下的按钮
+._btn_ {
+  background: white;
+  color: $main;
+  font-size: 12px;
+  line-height: 28px;
+  min-width: 100px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    color: #999;
+  }
+}
+
+._prem_btn_ {
+  @extend ._btn_;
+  margin-right: 5px;
+}
+
+._prem_btn_group_ {
+  @extend ._btn_;
+  border-right: solid 1px #e5e5e5;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+// flex 居中
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 黑色加粗字体
+.font {
+  color: $main;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+// 右键菜单
+._menu_warpper_ {
+  .v-contextmenu-item--hover {
+    background: rgba(51, 173, 51, 0.18) !important;
+    color: $main;
+  }
+
+  .v-contextmenu {
+    // backdrop-filter: blur(10px) !important;
+    // background-color: rgba(255, 255, 255, 0.25) !important;
+    &.left {
+      left: 5px !important;
+    }
+
+    &.right {
+      right: 5px !important;
+    }
+  }
+
+  .v-contextmenu-item {
+    &.v-contextmenu-submenu {
+      .v-contextmenu-submenu__title {
+        line-height: 1.5;
+      }
+
+      .v-contextmenu-iconfont {
+        top: 8px;
+      }
+    }
+
+    font-size: 12px !important;
+    padding: 5px 30px;
+    line-height: 1.5;
+  }
+}
+// 按钮样式
+.buttons {
+  margin-top: 42px;
+  .default {
+    width: 150px;
+    font-size: 14px;
+    line-height: 48px;
+    color: white;
+    background: #ccc;
+    text-align: center;
+    margin-right: 50px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .active {
+    width: 150px;
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    background: black;
+    float: right;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd-LightObl.eot');
+    src: url('TradeGothicLTStd-LightObl.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLTStd-LightObl.woff2') format('woff2'),
+        url('TradeGothicLTStd-LightObl.woff') format('woff'),
+        url('TradeGothicLTStd-LightObl.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd.eot');
+    src: url('TradeGothicLTStd.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLTStd.woff2') format('woff2'),
+        url('TradeGothicLTStd.woff') format('woff'),
+        url('TradeGothicLTStd.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd-Obl.eot');
+    src: url('TradeGothicLTStd-Obl.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLTStd-Obl.woff2') format('woff2'),
+        url('TradeGothicLTStd-Obl.woff') format('woff'),
+        url('TradeGothicLTStd-Obl.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd-Bd2.eot');
+    src: url('TradeGothicLTStd-Bd2.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLTStd-Bd2.woff2') format('woff2'),
+        url('TradeGothicLTStd-Bd2.woff') format('woff'),
+        url('TradeGothicLTStd-Bd2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd-Light.eot');
+    src: url('TradeGothicLTStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLTStd-Light.woff2') format('woff2'),
+        url('TradeGothicLTStd-Light.woff') format('woff'),
+        url('TradeGothicLTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd-Bd2Obl.eot');
+    src: url('TradeGothicLTStd-Bd2Obl.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLTStd-Bd2Obl.woff2') format('woff2'),
+        url('TradeGothicLTStd-Bd2Obl.woff') format('woff'),
+        url('TradeGothicLTStd-Bd2Obl.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+

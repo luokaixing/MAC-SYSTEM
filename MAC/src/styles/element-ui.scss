@@ -1,0 +1,282 @@
+#fold-scroll {
+  .el-scrollbar__view {
+    position: relative;
+  }
+}
+.el-scrollbar__wrap {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+._fixed_right_scroll_ {
+  .el-scrollbar__bar.is-vertical {
+    position: fixed;
+    bottom: 17px;
+    right: 5px;
+    top: 200px;
+    width: 6px;
+    z-index: 9;
+    // background: #939393;
+  }
+  .el-scrollbar__thumb {
+    background-color: #939393;
+    // background-color: rgba(144, 147, 153, 0.5);
+  }
+}
+
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+.OPACITY_STYLE {
+  &.SELF_CHECKBOX {
+    .el-checkbox__input {
+      opacity: 0.3;
+      &:before {
+        border: none;
+        background: {
+          color: #33ad33;
+          image: url("../assets/icons/check.png");
+          repeat: no-repeat;
+          position: center;
+        }
+      }
+    }
+  }
+}
+
+// 自定义多选框样式
+.SELF_CHECKBOX {
+  &._HAS_LABEL {
+    .el-checkbox__label {
+      display: inline-block;
+    }
+  }
+  .el-checkbox__label {
+    display: none;
+  }
+  &.is-checked {
+    .el-checkbox__input {
+      opacity: 1;
+      &:before {
+        border: none;
+        background: {
+          color: #33ad33;
+          image: url("../assets/icons/check.png");
+          repeat: no-repeat;
+          position: center;
+        }
+      }
+    }
+  }
+  .el-checkbox__input {
+    &:before {
+      content: "";
+      transition: background-color 0.3s ease, border 0.3s ease;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      border: {
+        style: solid;
+        color: #999;
+        width: 1px;
+        radius: 50%;
+      }
+    }
+    .el-checkbox__inner {
+      display: none;
+    }
+  }
+}
+
+// 上传样式
+.upload-mask {
+  .el-upload-dragger {
+    border: none;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+  }
+  .el-upload-list {
+    display: none;
+  }
+
+  .el-upload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+.black {
+  .el-scrollbar__thumb {
+    background: black !important;
+  }
+}
+// 下拉框样式
+
+.el-dropdown-menu {
+  width: 180px;
+  border-radius: 0;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+}
+
+.el-dropdown-menu__item {
+  color: black !important;
+  line-height: 50px !important;
+  position: relative !important;
+  font-size: 12px !important;
+}
+
+.text-area {
+  .el-input__inner {
+    line-height: 1 !important;
+  }
+
+  .el-input__inner {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: inherit;
+    min-height: inherit !important;
+    max-height: inherit !important;
+  }
+}
+.textarea-print {
+  .text.center {
+    text-align: center !important;
+  }
+  .text.italic {
+    font-style: italic !important;
+  }
+}
+.center {
+  text-align: center !important;
+  .el-input__inner {
+    text-align: center !important;
+  }
+}
+
+.italic {
+  font-style: italic !important;
+  .el-input__inner {
+    font-style: italic !important;
+  }
+}
+
+// 输入框
+.normal-input {
+  .el-input__inner {
+    color: #333;
+    padding: 20px;
+    border: solid 2px #999;
+    height: 42px;
+    line-height: 38px;
+    font-size: 12px;
+    border-radius: 0;
+    &::placeholder {
+      color: #999;
+    }
+  }
+}
+
+// 搜索输入框
+.search-input {
+  .el-input__inner {
+    border: none;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border-radius: 0;
+    &::placeholder {
+      color: #666;
+    }
+  }
+
+  .el-input__icon {
+    color: #666;
+    line-height: 28px;
+  }
+}
